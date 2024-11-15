@@ -1,5 +1,12 @@
 import "./App.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
+import weatherImage from '/weather_image.png';
+import blogImage from '/blog_image.png';
+import formImage from '/form_image.png';
+import notesImage from '/notes_image.png';
+import passwordImage from '/passwordGen_image.png';
+
+
 
 function App() {
   useEffect(() => {
@@ -185,7 +192,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src= "/weather_image.png"
+                    src= {weatherImage}
                     alt="Print de tela do Aplicativo de clima"
                   />
                 </div>
@@ -218,7 +225,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="/form_image.png"
+                    src={formImage}
                     alt="Print de tela do Aplicativo de formulario"
                   />
                 </div>
@@ -247,7 +254,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="/blog_image.png"
+                    src={blogImage}
                     alt="Print de tela do Aplicativo de CRUD"
                   />
                 </div>
@@ -278,7 +285,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="/notes_image.png"
+                    src={notesImage}
                     alt="Print de tela do Aplicativo de notas"
                   />
                 </div>
@@ -309,7 +316,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="/passwordGen_image.png"
+                    src={passwordImage}
                     alt="Print de tela do Aplicativo de senhas"
                   />
                 </div>
