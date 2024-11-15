@@ -185,7 +185,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src= "img/weather_image.png"
+                    src= "/weather_image.png"
                     alt="Print de tela do Aplicativo de clima"
                   />
                 </div>
@@ -218,7 +218,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="img/form_image.png"
+                    src="/form_image.png"
                     alt="Print de tela do Aplicativo de formulario"
                   />
                 </div>
@@ -247,7 +247,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="img/blog_image.png"
+                    src="/blog_image.png"
                     alt="Print de tela do Aplicativo de CRUD"
                   />
                 </div>
@@ -278,7 +278,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="img/notes_image.png"
+                    src="/notes_image.png"
                     alt="Print de tela do Aplicativo de notas"
                   />
                 </div>
@@ -309,7 +309,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src="img/passwordGen_image.png"
+                    src="/passwordGen_image.png"
                     alt="Print de tela do Aplicativo de senhas"
                   />
                 </div>
