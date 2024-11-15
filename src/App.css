@@ -326,7 +326,8 @@ img {
 
     .links-container {
         margin-top: 2rem;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 3rem;
     }
 
     .links-container svg {
