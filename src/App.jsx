@@ -1,12 +1,11 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import weatherImage from '/weather_image.png';
-import blogImage from '/blog_image.png';
-import formImage from '/form_image.png';
-import notesImage from '/notes_image.png';
-import passwordImage from '/passwordGen_image.png';
-
-
+import weatherImage from "/weather_image.png";
+import blogImage from "/blog_image.png";
+import formImage from "/form_image.png";
+import notesImage from "/notes_image.png";
+import passwordImage from "/passwordGen_image.png";
+import desapegueiImage from "/desapeguei.png";
 
 function App() {
   useEffect(() => {
@@ -132,9 +131,8 @@ function App() {
           </div>
 
           <div className="infos-container" id="about">
-          
             <div className="about">
-            <h2 id="responsive-title">Sobre</h2>
+              <h2 id="responsive-title">Sobre</h2>
               <p>
                 Cientista da computação formado pela Universidade Presbiteriana
                 Mackenzie com anos de experiência em atendimento ao cliente e
@@ -149,20 +147,7 @@ function App() {
               </p>
             </div>
             <div className="experiences" id="experiences">
-            <h2 id="responsive-title">Experiências</h2>
-              <div className="experience">
-                <h3>Multiplicador de treinamento, CSU DIGITAL S.A</h3>
-                <p className="subtitle">SETEMBRO 2019 - JULHO 2021</p>
-                <p>
-                  Responsável pela melhoria contínua dos indicadores nas
-                  operações de atendimento ao cliente. Realizava a análise
-                  detalhada dos dados, elaborava e implementava planos de ação,
-                  ministrava treinamentos de modo presencial e on-line além da
-                  apresentação dos resultados destacando a evolução e o impacto
-                  das ações realizadas para promover um desempenho cada vez mais
-                  alinhado aos objetivos da organização.
-                </p>
-              </div>
+              <h2 id="responsive-title">Experiências</h2>
               <div className="experience">
                 <h3>
                   Consultor em Soluções de tecnologia, ERNST & YOUNG ASSESSORIA
@@ -178,9 +163,22 @@ function App() {
                   objetivos estratégicos da organização.
                 </p>
               </div>
+              <div className="experience">
+                <h3>Multiplicador de treinamento, CSU DIGITAL S.A</h3>
+                <p className="subtitle">SETEMBRO 2019 - JULHO 2021</p>
+                <p>
+                  Responsável pela melhoria contínua dos indicadores nas
+                  operações de atendimento ao cliente. Realizava a análise
+                  detalhada dos dados, elaborava e implementava planos de ação,
+                  ministrava treinamentos de modo presencial e on-line além da
+                  apresentação dos resultados destacando a evolução e o impacto
+                  das ações realizadas para promover um desempenho cada vez mais
+                  alinhado aos objetivos da organização.
+                </p>
+              </div>
             </div>
             <div className="projects" id="projects">
-            <h2 id="responsive-title">Projetos</h2>
+              <h2 id="responsive-title">Projetos</h2>
               <div
                 className="project"
                 onClick={() =>
@@ -192,7 +190,7 @@ function App() {
               >
                 <div className="img-section">
                   <img
-                    src= {weatherImage}
+                    src={weatherImage}
                     alt="Print de tela do Aplicativo de clima"
                   />
                 </div>
@@ -331,6 +329,42 @@ function App() {
                     <li>HTML & CSS</li>
                     <li>JavaScript</li>
                     <li>Manipulação DOM</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="project"
+                onClick={() =>
+                  window.open("https://desapeguei-7iyh.onrender.com", "_blank")
+                }
+              >
+                <div className="img-section">
+                  <img
+                    src={desapegueiImage}
+                    alt="Print de tela do Aplicativo Desapeguei"
+                  />
+                </div>
+                <div className="project-info">
+                  <h3>Desapeguei - Projeto FullStack</h3>
+                  <p>
+                    Inspirado na plataforma Enjoei, com ele é possível cadastrar
+                    produtos à venda, editar, excluir e concluir a negociação
+                    solicitada por outros usuários. Crie e personalize seu
+                    perfil com a sua foto e seus dados de contato!
+                    Essa aplicação web conta com back end, com API REST e sistema de autenticação
+                  </p>
+                  <ul className="tags">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>React Router</li>
+                    <li>React Context API</li>
+                    <li>Node.JS</li>
+                    <li>Express</li>
+                    <li>Mongo DB</li>
+                    <li>Mongoose</li>
+                    <li>Autenticação JWT</li>
+                    <li>API REST</li>
                   </ul>
                 </div>
               </div>
