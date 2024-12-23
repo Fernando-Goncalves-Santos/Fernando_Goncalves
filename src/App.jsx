@@ -182,6 +182,43 @@ function App() {
               <div
                 className="project"
                 onClick={() =>
+                  window.open("https://desapeguei-7iyh.onrender.com", "_blank")
+                }
+              >
+                <div className="img-section">
+                  <img
+                    src={desapegueiImage}
+                    alt="Print de tela do Aplicativo Desapeguei"
+                  />
+                </div>
+                <div className="project-info">
+                  <h3>Desapeguei - Projeto FullStack</h3>
+                  <p>
+                    Inspirado na plataforma Enjoei, com ele é possível cadastrar
+                    produtos à venda, editar, excluir e concluir a negociação
+                    solicitada por outros usuários. Crie e personalize seu
+                    perfil com a sua foto e seus dados de contato! Essa
+                    aplicação web conta com back end, com API REST e sistema de
+                    autenticação
+                  </p>
+                  <ul className="tags">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>React Router</li>
+                    <li>React Context API</li>
+                    <li>Node.JS</li>
+                    <li>Express</li>
+                    <li>Mongo DB</li>
+                    <li>Mongoose</li>
+                    <li>Autenticação JWT</li>
+                    <li>API REST</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="project"
+                onClick={() =>
                   window.open(
                     "https://fernando-goncalves-santos.github.io/weatherApp/",
                     "_blank"
@@ -329,42 +366,6 @@ function App() {
                     <li>HTML & CSS</li>
                     <li>JavaScript</li>
                     <li>Manipulação DOM</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open("https://desapeguei-7iyh.onrender.com", "_blank")
-                }
-              >
-                <div className="img-section">
-                  <img
-                    src={desapegueiImage}
-                    alt="Print de tela do Aplicativo Desapeguei"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Desapeguei - Projeto FullStack</h3>
-                  <p>
-                    Inspirado na plataforma Enjoei, com ele é possível cadastrar
-                    produtos à venda, editar, excluir e concluir a negociação
-                    solicitada por outros usuários. Crie e personalize seu
-                    perfil com a sua foto e seus dados de contato!
-                    Essa aplicação web conta com back end, com API REST e sistema de autenticação
-                  </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>React Router</li>
-                    <li>React Context API</li>
-                    <li>Node.JS</li>
-                    <li>Express</li>
-                    <li>Mongo DB</li>
-                    <li>Mongoose</li>
-                    <li>Autenticação JWT</li>
-                    <li>API REST</li>
                   </ul>
                 </div>
               </div>
