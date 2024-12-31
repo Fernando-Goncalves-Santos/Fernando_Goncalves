@@ -138,11 +138,11 @@ function App() {
                 Mackenzie com anos de experiência em atendimento ao cliente e
                 treinamentos corporativos, o que me ajudou a desenvolver
                 habilidades como comunicação eficiente, gestão de tempo e outras
-                soft skills. Recentemente, atuei como consultor em soluções
-                de tecnologia, nas funções de gestão da mudança e PMO em
-                projetos de implementação e melhorias de software. Hoje, estou
-                em busca de aprimorar e contribuir com minhas habilidades
-                técnicas como desenvolvedor Full Stack.
+                soft skills. Recentemente, atuei como consultor em soluções de
+                tecnologia, nas funções de gestão da mudança e PMO em projetos
+                de implementação e melhorias de software. Hoje, estou em busca
+                de aprimorar e contribuir com minhas habilidades técnicas como
+                desenvolvedor Full Stack.
               </p>
             </div>
             <div className="experiences" id="experiences">
