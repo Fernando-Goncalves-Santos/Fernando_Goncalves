@@ -6,6 +6,7 @@ import formImage from "/form_image.png";
 import notesImage from "/notes_image.png";
 import passwordImage from "/passwordGen_image.png";
 import desapegueiImage from "/desapeguei.png";
+import pensaRapidoImage from "/pensa_rapido.png";
 
 function App() {
   useEffect(() => {
@@ -178,6 +179,46 @@ function App() {
             </div>
             <div className="projects" id="projects">
               <h2 id="responsive-title">Projetos</h2>
+              <div
+                className="project"
+                onClick={() =>
+                  window.open("https://pensa-rapido.onrender.com", "_blank")
+                }
+              >
+                <div className="img-section">
+                  <img
+                    src={pensaRapidoImage}
+                    alt="Print de tela do Aplicativo Pensa Rapido"
+                  />
+                </div>
+                <div className="project-info">
+                  <h3>Pensa Rápido - Projeto FullStack</h3>
+                  <p>
+                    Aplicação web de quiz. Crie sua contam, teste seus
+                    conhecimentos em um dos dois modos de jogo disponíveis e
+                    dispute as melhores posições no ranking geral. Uma
+                    implementação focada em gerenciamento de estados usando a
+                    context API do React. No back end foi implementada API Rest
+                    usando Node.Js e Express
+                  </p>
+                  <ul className="tags">
+                    <li>HTML & CSS</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>React Router</li>
+                    <li>React Context API</li>
+                    <li>Node.JS</li>
+                    <li>Express</li>
+                    <li>Mongo DB</li>
+                    <li>Mongoose</li>
+                    <li>Autenticação JWT</li>
+                    <li>API REST</li>
+                    <li>LocalStorage</li>
+                    <li>Keep Alive/Github Actions</li>
+                  </ul>
+                </div>
+              </div>
               <div
                 className="project"
                 onClick={() =>
