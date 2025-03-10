@@ -194,7 +194,7 @@ function App() {
                 <div className="project-info">
                   <h3>Pensa Rápido - Projeto FullStack</h3>
                   <p>
-                    Aplicação web de quiz. Crie sua contam, teste seus
+                    Aplicação web de quiz. Crie sua conta, teste seus
                     conhecimentos em um dos dois modos de jogo disponíveis e
                     dispute as melhores posições no ranking geral. Uma
                     implementação focada em gerenciamento de estados usando a
