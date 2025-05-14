@@ -4,9 +4,10 @@ import weatherImage from "/weather_image.png";
 import blogImage from "/blog_image.png";
 import formImage from "/form_image.png";
 import notesImage from "/notes_image.png";
-import passwordImage from "/passwordGen_image.png";
+import chronosImage from "/Chronos_Pomodoro.png";
 import desapegueiImage from "/desapeguei.png";
 import pensaRapidoImage from "/pensa_rapido.png";
+import { Project } from "./components/Project";
 
 function App() {
   useEffect(() => {
@@ -179,20 +180,37 @@ function App() {
             </div>
             <div className="projects" id="projects">
               <h2 id="responsive-title">Projetos</h2>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open("https://pensa-rapido.onrender.com", "_blank")
+              <Project name={"Chronos Pomodoro"}
+                link={"https://timer-pomodoro-eta.vercel.app"}
+                image={chronosImage}
+                description={
+                  <p>
+                    Gerencie melhor o seu tempo e aumente sua produtividade com
+                    a técnica Pomodoro. Uma aplicação que controla seus períodos
+                    de foco e descanso por meio de ciclos, acompanhe seu
+                    progresso através do histórico e ainda configure os
+                    intervalos de produtividade e repouso para adaptar a melhor
+                    metodologia de produtividade ao seu ritmo
+                  </p>
                 }
-              >
-                <div className="img-section">
-                  <img
-                    src={pensaRapidoImage}
-                    alt="Print de tela do Aplicativo Pensa Rapido"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Pensa Rápido - Projeto FullStack</h3>
+                tags={[
+                  "HTML & CSS",
+                  "TypeScript",
+                  "JavaScript",
+                  "Web Workers",
+                  "React",
+                  "React Router",
+                  "React Context API",
+                  "Reducer",
+                  "Toastify",
+                  "Lucide Icons",
+                  "Temas Claro/Escuro",
+                ]}
+              />
+              <Project
+                name={"Pensa Rápido - Projeto FullStack"}
+                link={"https://pensa-rapido.onrender.com"}
+                description={
                   <p>
                     Aplicação web de quiz. Crie sua conta, teste seus
                     conhecimentos em um dos dois modos de jogo disponíveis e
@@ -201,38 +219,43 @@ function App() {
                     context API do React. No back end foi implementada API Rest
                     usando Node.Js e Express
                   </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>TypeScript</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>React Router</li>
-                    <li>React Context API</li>
-                    <li>Node.JS</li>
-                    <li>Express</li>
-                    <li>Mongo DB</li>
-                    <li>Mongoose</li>
-                    <li>Autenticação JWT</li>
-                    <li>API REST</li>
-                    <li>LocalStorage</li>
-                    <li>Keep Alive/Github Actions</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open("https://desapeguei-7iyh.onrender.com", "_blank")
                 }
-              >
-                <div className="img-section">
-                  <img
-                    src={desapegueiImage}
-                    alt="Print de tela do Aplicativo Desapeguei"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Desapeguei - Projeto FullStack</h3>
+                tags={[
+                  "HTML & CSS",
+                  "TypeScript",
+                  "JavaScript",
+                  "React",
+                  "React Router",
+                  "React Context API",
+                  "Node.JS",
+                  "Express",
+                  "Mongo DB",
+                  "Mongoose",
+                  "Autenticação JWT",
+                  "API REST",
+                  "LocalStorage",
+                  "Keep Alive/Github Actions",
+                ]}
+                image={pensaRapidoImage}
+              />
+              <Project
+                name={"Desapeguei - Projeto FullStack"}
+                link={"https://desapeguei-7iyh.onrender.com"}
+                image={desapegueiImage}
+                tags={[
+                  "HTML & CSS",
+                  "JavaScript",
+                  "React",
+                  "React Router",
+                  "React Context API",
+                  "Node.JS",
+                  "Express",
+                  "Mongo DB",
+                  "Mongoose",
+                  "Autenticação JWT",
+                  "API REST",
+                ]}
+                description={
                   <p>
                     Inspirado na plataforma Enjoei, com ele é possível cadastrar
                     produtos à venda, editar, excluir e concluir a negociação
@@ -241,38 +264,13 @@ function App() {
                     aplicação web conta com back end, com API REST e sistema de
                     autenticação
                   </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>React Router</li>
-                    <li>React Context API</li>
-                    <li>Node.JS</li>
-                    <li>Express</li>
-                    <li>Mongo DB</li>
-                    <li>Mongoose</li>
-                    <li>Autenticação JWT</li>
-                    <li>API REST</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open(
-                    "https://fernando-goncalves-santos.github.io/weatherApp/",
-                    "_blank"
-                  )
                 }
-              >
-                <div className="img-section">
-                  <img
-                    src={weatherImage}
-                    alt="Print de tela do Aplicativo de clima"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Aplicativo de Clima</h3>
+              />
+              <Project
+                name={"Aplicativo de Clima"}
+                link={"https://fernando-goncalves-santos.github.io/weatherApp/"}
+                image={weatherImage}
+                description={
                   <p>
                     Aplicativo Web para saber as informações do clima
                     atualizadas de qualquer cidade do mundo. O app faz chamadas
@@ -280,135 +278,67 @@ function App() {
                     os tratamentos necessários para lidar com diferentes fusos
                     horários.
                   </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>React</li>
-                    <li>React Router</li>
-                    <li>JavaScript</li>
-                    <li>Consumo de API</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open(
-                    "https://fernando-goncalves-santos.github.io/Formulario_Multistep_React_ts/",
-                    "_blank"
-                  )
                 }
-              >
-                <div className="img-section">
-                  <img
-                    src={formImage}
-                    alt="Print de tela do Aplicativo de formulario"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Formulário Multistep</h3>
-                  <p>
-                    Uma implementação de formulário com múltiplos passos
-                    componentizados compartilhando informações por meio de props
-                  </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>React</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open(
-                    "https://fernando-goncalves-santos.github.io/blog_react/",
-                    "_blank"
-                  )
-                }
-              >
-                <div className="img-section">
-                  <img
-                    src={blogImage}
-                    alt="Print de tela do Aplicativo de CRUD"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>CRUD em um Blog</h3>
+                tags={[
+                  "HTML & CSS",
+                  "JavaScript",
+                  "React",
+                  "React Router",
+                  "Integração com a API Meteoblue",
+                ]}
+              />
+              <Project
+                name={"CRUD em um Blog"}
+                link={"https://fernando-goncalves-santos.github.io/blog_react/"}
+                image={blogImage}
+                description={
                   <p>
                     Implementação das operações CRUD - Create, Read, Update e
                     Delete com a API JSONPlaceholder
                   </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>React</li>
-                    <li>React Router</li>
-                    <li>Axios</li>
-                    <li>JavaScript</li>
-                    <li>Consumo de API</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open(
-                    "https://fernando-goncalves-santos.github.io/dev_notes/",
-                    "_blank"
-                  )
                 }
-              >
-                <div className="img-section">
-                  <img
-                    src={notesImage}
-                    alt="Print de tela do Aplicativo de notas"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Aplicativo de Notas</h3>
+                tags={[
+                  "HTML & CSS",
+                  "JavaScript",
+                  "React",
+                  "React Router",
+                  "Axios",
+                  "Integração com a API JSONPlaceholder",
+                ]}
+              />
+              <Project
+                name={"Formulário Multistep"}
+                link={
+                  "https://fernando-goncalves-santos.github.io/Formulario_Multistep_React_ts/"
+                }
+                image={formImage}
+                description={
+                  <p>
+                    Uma implementação de formulário com múltiplos passos
+                    componentizados compartilhando informações por meio de props
+                  </p>
+                }
+                tags={["HTML & CSS", "JavaScript", "React", "Typescript"]}
+              />
+              <Project
+                name={"Aplicativo de Notas"}
+                link={"https://fernando-goncalves-santos.github.io/dev_notes/"}
+                image={notesImage}
+                description={
                   <p>
                     Aplicativo web para realizar anotações e lembretes.
                     Adicione, busque, edite, duplique, exclua e fixe suas notas.
                     Se preferir, é possível gerar o arquivo .csv com as
-                    anotações.
+                    anotações
                   </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Manipulação DOM</li>
-                    <li>Uso da Local Storage</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="project"
-                onClick={() =>
-                  window.open(
-                    "https://fernando-goncalves-santos.github.io/gerador_senhas/",
-                    "_blank"
-                  )
                 }
-              >
-                <div className="img-section">
-                  <img
-                    src={passwordImage}
-                    alt="Print de tela do Aplicativo de senhas"
-                  />
-                </div>
-                <div className="project-info">
-                  <h3>Gerador de Senhas</h3>
-                  <p>
-                    Implementação da função de geração de senhas aleatórias.
-                    Escolha o tamanho e personalize sua senha forte com números,
-                    letras e caracteres especiais.
-                  </p>
-                  <ul className="tags">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Manipulação DOM</li>
-                  </ul>
-                </div>
-              </div>
+                tags={[
+                  "HTML & CSS",
+                  "JavaScript",
+                  "Manipulação do DOM",
+                  "Uso da LocalStorage",
+                ]}
+              />
             </div>
           </div>
         </div>
