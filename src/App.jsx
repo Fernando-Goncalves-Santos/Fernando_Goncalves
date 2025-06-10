@@ -137,14 +137,17 @@ function App() {
               <h2 id="responsive-title">Sobre</h2>
               <p>
                 Cientista da computação formado pela Universidade Presbiteriana
-                Mackenzie com anos de experiência em atendimento ao cliente e
-                treinamentos corporativos, o que me ajudou a desenvolver
-                habilidades como comunicação eficiente, gestão de tempo e outras
-                soft skills. Recentemente, atuei como consultor em soluções de
-                tecnologia, nas funções de gestão da mudança e PMO em projetos
-                de implementação e melhorias de software. Hoje, estou em busca
-                de aprimorar e contribuir com minhas habilidades técnicas como
-                desenvolvedor Full Stack.
+                Mackenzie, em minha última experiência profissional, atuei como
+                consultor em soluções de tecnologia nas funções de gestão da
+                mudança e PMO em projetos de implementação e melhorias de
+                software. Durante minha jornada de aprendizado tive a
+                oportunidade de me especializar em ferramentas modernas de
+                desenvolvimento web front end como JavaScript, React, TypeScript
+                e Jest além de ser capaz de atuar como back end também com Node,
+                Express, Python, Django e bancos de dados Relacionais e Não
+                relacionais. Tenho facilidade no aprendizado e busco trabalhar
+                sempre equilibrando a realização das tarefas de forma autônoma
+                com a construção de soluções em equipe.
               </p>
             </div>
             <div className="experiences" id="experiences">
@@ -180,7 +183,8 @@ function App() {
             </div>
             <div className="projects" id="projects">
               <h2 id="responsive-title">Projetos</h2>
-              <Project name={"Chronos Pomodoro"}
+              <Project
+                name={"Chronos Pomodoro"}
                 link={"https://timer-pomodoro-eta.vercel.app"}
                 image={chronosImage}
                 description={
