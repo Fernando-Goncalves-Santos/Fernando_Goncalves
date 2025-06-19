@@ -190,7 +190,7 @@ function App() {
                 image={theBlogImage}
                 description={
                   <p>
-                    Plataforma completa de publicação de artigos, onde você pode
+                    Aplicação full stack para publicação de artigos, onde você pode
                     criar, editar e compartilhar conteúdos de forma simples,
                     intuitiva e segura. O TheBlog oferece editor com suporte a
                     Markdown, upload de imagens, geração automática de slugs e
