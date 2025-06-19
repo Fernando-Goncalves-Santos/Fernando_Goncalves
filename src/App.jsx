@@ -7,6 +7,7 @@ import notesImage from "/notes_image.png";
 import chronosImage from "/Chronos_Pomodoro.png";
 import desapegueiImage from "/desapeguei.png";
 import pensaRapidoImage from "/pensa_rapido.png";
+import theBlogImage from "/TheBlog.png";
 import { Project } from "./components/Project";
 
 function App() {
@@ -183,6 +184,44 @@ function App() {
             </div>
             <div className="projects" id="projects">
               <h2 id="responsive-title">Projetos</h2>
+              <Project
+                name={"TheBlog"}
+                link={"https://theblog-sable.vercel.app"}
+                image={theBlogImage}
+                description={
+                  <p>
+                    Plataforma completa de publicação de artigos, onde você pode
+                    criar, editar e compartilhar conteúdos de forma simples,
+                    intuitiva e segura. O TheBlog oferece editor com suporte a
+                    Markdown, upload de imagens, geração automática de slugs e
+                    renderização protegida contra XSS. Gerencie seus posts com
+                    facilidade e conte com recursos avançados como cache
+                    inteligente, revalidação incremental (ISR), autenticação de
+                    administrador e integração com banco de dados PostgreSQL via
+                    Prisma Accelerate.
+                  </p>
+                }
+                tags={[
+                  "Next.js",
+                  "App Router",
+                  "Server Actions",
+                  "SSR e ISR",
+                  "Next Cache",
+                  "Tailwind CSS",
+                  "Prisma Accelerate",
+                  "PostgreSQL",
+                  "TypeScript",
+                  "React",
+                  "React Markdown Editor",
+                  "Rehype Sanitize",
+                  "Zod",
+                  "Uuid",
+                  "Slugify",
+                  "Cloudinary",
+                  "Lucide Icons",
+                  "Toastify",
+                ]}
+              />
               <Project
                 name={"Chronos Pomodoro"}
                 link={"https://timer-pomodoro-eta.vercel.app"}
