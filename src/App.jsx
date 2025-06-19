@@ -207,6 +207,7 @@ function App() {
                   "Server Actions",
                   "SSR e ISR",
                   "Next Cache",
+                  "Cookie Seguro",
                   "Tailwind CSS",
                   "Prisma Accelerate",
                   "PostgreSQL",
